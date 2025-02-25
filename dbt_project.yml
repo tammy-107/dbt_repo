@@ -42,6 +42,7 @@ models:
       tableau_transformed_data:
         +materialized: table
         +schema: data_mart
+        +enabled: true
     example:
       +materialized: table
     postgres_test:
