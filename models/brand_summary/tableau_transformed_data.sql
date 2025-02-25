@@ -1,7 +1,7 @@
 SELECT *, 
     CASE 
-        WHEN PA_OUTCOME ILIKE 'APPROVED' THEN 'Approved'
-        WHEN PA_OUTCOME ILIKE 'DENIED' THEN 'Denied - Appeal Available' 
+        WHEN PA_OUTCOME ILIKE 'Approved' THEN 'Approved'
+        WHEN PA_OUTCOME ILIKE '%Denied%' THEN 'Denied' 
         ELSE 'None'
     END AS pa_actual_outcome
-FROM {{ source('postgres_test', 'brand_summary') }};
+FROM {{ source('postgres_test', 'brand_summary') }}
