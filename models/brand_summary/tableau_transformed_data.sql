@@ -1,7 +1,10 @@
-SELECT *, 
-    CASE 
-        WHEN PA_OUTCOME ILIKE 'Approved' THEN 'Approved'
-        WHEN PA_OUTCOME ILIKE '%Denied%' THEN 'Denied' 
-        ELSE 'None'
-    END AS pa_actual_outcome
-FROM {{ source('postgres_test', 'brand_summary') }}
+select
+    *,
+    case
+        when pa_outcome ilike 'Approved'
+        then 'Approved'
+        when pa_outcome ilike '%Denied%'
+        then 'Denied'
+        else 'None'
+    end as pa_actual_outcome
+from {{ source("postgres_test", "brand_summary") }}
