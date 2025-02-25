@@ -42,3 +42,5 @@ models:
       +materialized: table
     postgres_test:
       +materialized: table
+    brand_summary:
+      +materialized: table
