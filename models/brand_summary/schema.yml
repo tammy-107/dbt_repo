@@ -2,7 +2,5 @@ version: 2
 
 sources:
   - name: postgres_test
-    database: test
-    schema: postgres_test
     tables:
       - name: brand_summary
