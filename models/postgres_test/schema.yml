@@ -6,3 +6,8 @@ sources:
     schema: test
     tables:
       - name: sample_data
+      
+  - name: postgres_test
+    tables:
+      - name: brand_summary
+
