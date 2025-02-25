@@ -41,7 +41,7 @@ models:
     brand_summary:
       tableau_transformed_data:
         +materialized: table
-        +schema: tableau_env
+        +schema: data_mart
     example:
       +materialized: table
     postgres_test:
