@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: brand_summary
+  - name: tableau_transformed_data
     database: test
     schema: postgres_test
     tables:

@@ -4,4 +4,4 @@ SELECT *,
         WHEN PA_OUTCOME ILIKE '%Denied%' THEN 'Denied' 
         ELSE 'None'
     END AS pa_actual_outcome
-FROM {{ source('brand_summary', 'brand_summary') }}
+FROM {{ source('postgres_test', 'brand_summary') }}
