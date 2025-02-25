@@ -42,3 +42,8 @@ models:
       +materialized: table
     postgres_test:
       +materialized: table
+    brand_summary:
+      tableau_transformed_data:
+        +materialized: table
+        +schema: data_mart
+        +enabled: true
