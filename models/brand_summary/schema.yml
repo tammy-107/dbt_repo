@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: tableau_test
+  - name: tableau_transformed_data
     database: test
     schema: postgres_test
     tables:
