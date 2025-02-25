@@ -3,6 +3,6 @@ version: 2
 sources:
   - name: tableau_transformed_data
     database: test
-    schema: postgres_test
+    schema: test
     tables:
       - name: brand_summary
